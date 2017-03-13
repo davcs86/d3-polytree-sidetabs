@@ -1,0 +1,35 @@
+
+.pfdjs-container {
+  // Override palette style
+  .pfdjs-palette {
+    margin: 6px 64px 6px 6px;
+  }
+  .pfdjs-st-container {
+    -webkit-transition: width 1s ease-out;
+    -moz-transition: width 1s ease-out;
+    -ms-transition: width 1s ease-out;
+    -o-transition: width 1s ease-out;
+    transition: width 1s ease-out;
+    width: 0;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    top: 0;
+    height: 100%;
+    &.open {
+      @media (max-width: 800px) {
+        min-width: 400px;
+        width: 50%;
+      }
+      @media (max-width: 400px) {
+        min-width: 100%;
+        width: 100%;
+      }
+      @media (min-width: 801px) {
+        min-width: 400px;
+        width: 35%;
+      }
+    }
+  }
+}

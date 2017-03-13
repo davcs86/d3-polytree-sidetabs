@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/davcs86/d3-polytree-sidetabs#readme",
   "devDependencies": {
-    "d3-polytree": "github:davcs86/d3-polytree#v2.0-beta"
+    "css-loader": "^0.25.0",
+    "d3-polytree": "github:davcs86/d3-polytree#v2.0-beta",
+    "domify": "^0.2.0",
+    "lodash": "^4.11.1",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.3"
   }
 }
