@@ -5,19 +5,91 @@
     margin: 6px 64px 6px 6px;
   }
   .pfdjs-st-container {
-    -webkit-transition: width 1s ease-out;
-    -moz-transition: width 1s ease-out;
-    -ms-transition: width 1s ease-out;
-    -o-transition: width 1s ease-out;
-    transition: width 1s ease-out;
+    //-webkit-transition: width 1s linear;
+    //-moz-transition: width 1s linear;
+    //-ms-transition: width 1s linear;
+    //-o-transition: width 1s linear;
+    //transition: width 1s linear;
+    //-webkit-transition: min-width 1s linear;
+    //-moz-transition: min-width 1s linear;
+    //-ms-transition: min-width 1s linear;
+    //-o-transition: min-width 1s linear;
+    //transition: min-width 1s linear;
     width: 0;
     z-index: 2;
     position: absolute;
-    right: 0;
-    background-color: white;
+    right: -3px;
     top: 0;
-    height: 100%;
+    bottom: 0;
+    background: #fafafa;
+    border: solid 1px #cccccc;
+    border-left: solid 2px #cccccc;
+    .pfdjs-st-tabs {
+      position: absolute;
+      width: 36px;
+      top: 6px;
+      bottom: 6px;
+      left: -37px;
+      .pfdjs-st-tab {
+        overflow: hidden;
+        height: 38px;
+        margin-bottom: 5px;
+        background: #fafafa;
+        border: solid 1px #cccccc;
+        border-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+        span {
+          font-size: 26px;
+          top: 5.5px;
+          position: relative;
+          cursor: pointer;
+        }
+        &.active{
+          span {
+            color: #ff4800;
+          }
+        }
+      }
+    }
+    .pfdjs-st-contents {
+      .pfdjs-st-content {
+        &.hidden{
+          display: none !important;
+        }
+        .content-title {
+          background-color: #5990bd;
+          color: white;
+          font-size: 12px;
+          line-height: 18px;
+          border: solid 1px #ccc;
+          .content-title-span {
+            vertical-align: top;
+            float: left;
+            margin-left: 6px;
+          }
+          .icon-cancel {
+            font-size: 18px;
+            cursor: pointer;
+            float: right;
+          }
+        }
+      }
+    }
     &.open {
+      right: 0;
+      .pfdjs-st-tabs{
+        .pfdjs-st-tab {
+          &.active {
+            left: 1px;
+            position: relative;
+            box-shadow: none;
+            border-right: 0;
+            border-width: 2px;
+          }
+        }
+      }
       @media (max-width: 800px) {
         min-width: 400px;
         width: 50%;
