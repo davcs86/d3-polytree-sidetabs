@@ -58,12 +58,23 @@
         &.hidden{
           display: none !important;
         }
+        .content-body {
+          position: absolute;
+          left: 0;
+          top: 20px;
+          right: 0;
+          bottom: 0;
+          overflow-y: auto;
+        }
         .content-title {
           background-color: #5990bd;
           color: white;
           font-size: 12px;
           line-height: 18px;
           border: solid 1px #ccc;
+          position: absolute;
+          left: 0;
+          right: 0;
           .content-title-span {
             vertical-align: top;
             float: left;
@@ -85,8 +96,8 @@
             left: 1px;
             position: relative;
             box-shadow: none;
-            border-right: 0;
             border-width: 2px;
+            border-right: 0;
           }
         }
       }
