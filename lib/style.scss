@@ -70,7 +70,7 @@
           background-color: #5990bd;
           color: white;
           font-size: 12px;
-          line-height: 18px;
+
           border: solid 1px #ccc;
           position: absolute;
           left: 0;
@@ -79,6 +79,7 @@
             vertical-align: top;
             float: left;
             margin-left: 6px;
+            line-height: 18px;
           }
           .icon-cancel {
             font-size: 18px;
